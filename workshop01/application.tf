@@ -8,7 +8,6 @@ resource "docker_container" "backend_ws1" {
   image = docker_image.backend_ws1_v3.image_id
   ports {
     internal = 3000
-    external = 8080 + count.index
   }
   env = [
     "BGG_DB_USER=${var.database_user}",
@@ -18,4 +17,8 @@ resource "docker_container" "backend_ws1" {
   networks_advanced {
     name = docker_network.network_ws1.name
   }
+}
+
+output "backend_ports" {
+    value = docker_container.backend_ws1[*].ports[0].external
 }

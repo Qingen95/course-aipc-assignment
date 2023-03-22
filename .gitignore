@@ -1,11 +1,13 @@
-# Local .terraform directories
+# lLocal .terraform directories
 **/.terraform/*
 
 # .tfstate files
 *.tfstate
 *.tfstate.*
 
+# terraform variable files
 *.tfvars
 *.tfvars.json
 
-terraform-practice
+# generated nginx configuration
+*/nginx.conf

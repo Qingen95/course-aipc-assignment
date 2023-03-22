@@ -7,6 +7,11 @@ variable "do_token" {
   sensitive = true
 }
 
+variable "domain_host" {
+  type      = string
+  sensitive = true
+}
+
 variable "docker_host" {
   type      = string
   sensitive = true
