@@ -1,5 +1,5 @@
 resource "docker_volume" "volume_database_ws1" {
-  name = "volume_database_workshop01"
+  name = "volume_database_${var.namespace}"
 }
 
 resource "docker_image" "image_mysql" {
@@ -7,7 +7,7 @@ resource "docker_image" "image_mysql" {
 }
 
 resource "docker_container" "database_mysql_ws1" {
-  name  = "database_workshop01"
+  name  = "database_${var.namespace}"
   image = docker_image.image_mysql.image_id
   ports {
     internal = 3306

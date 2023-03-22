@@ -1,3 +1,7 @@
+variable "namespace" {
+  default = "workshop01"
+}
+
 variable "do_token" {
   type      = string
   sensitive = true
