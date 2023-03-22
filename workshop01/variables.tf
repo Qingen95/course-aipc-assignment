@@ -16,3 +16,13 @@ variable "backend_instance_count" {
   type    = number
   default = 3
 }
+
+variable "database_user" {
+  type      = string
+  sensitive = true
+}
+
+variable "database_password" {
+  type      = string
+  sensitive = true
+}

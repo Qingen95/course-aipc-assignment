@@ -11,8 +11,8 @@ resource "docker_container" "backend_ws1" {
     external = 8080 + count.index
   }
   env = [
-    "BGG_DB_USER=root",
-    "BGG_DB_PASSWORD=changeit",
+    "BGG_DB_USER=${var.database_user}",
+    "BGG_DB_PASSWORD=${var.database_password}",
     "BGG_DB_HOST=${docker_container.database_mysql_ws1.name}"
   ]
   networks_advanced {
