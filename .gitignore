@@ -1,6 +1,8 @@
 # local .terraform directories
 **/.terraform
 
+**/inventory.yaml
+
 # terraform variable files
 *.tfvars
 *.tfvars.json
