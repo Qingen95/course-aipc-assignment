@@ -4,6 +4,3 @@
 # terraform variable files
 *.tfvars
 *.tfvars.json
-
-# generated nginx configuration
-*/nginx.conf
