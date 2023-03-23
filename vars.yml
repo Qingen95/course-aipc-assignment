@@ -1,0 +1,3 @@
+codeserver_password: abc123
+cs_dir: /usr/local/opt
+unpacked_file: code-server-4.9.1-linux-amd64

@@ -6,3 +6,5 @@
 # terraform variable files
 *.tfvars
 *.tfvars.json
+
+**/vars

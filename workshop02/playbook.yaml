@@ -1,7 +1,0 @@
-- name: Connectvitiy test
-  hosts: all
-  vars:
-    my_vars: hello
-  tasks:
-    - name: ping
-      ping:
