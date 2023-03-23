@@ -7,7 +7,7 @@
         state: latest
     - name: Create nginx.conf file
       template:
-        src: sample.code-server.conf.j2
+        src: "../templates/sample.code-server.conf.j2"
         dest: /etc/nginx/sites-available/code-server.conf
     - name: link code server.conf to /etc/nginx/sites-avaiable
       file: 

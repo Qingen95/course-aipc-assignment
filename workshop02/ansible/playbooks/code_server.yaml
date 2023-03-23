@@ -40,7 +40,7 @@
           dest: /usr/bin/code-server
     - name: Generate code server config file
       template:
-        src: sample.code-server.service.j2
+        src: "../templates/sample.code-server.service.j2"
         dest: /lib/systemd/system/code-server.service
       vars:
         codeserver_password: "{{ codeserver_secret_password }}"
