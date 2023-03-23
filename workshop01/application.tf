@@ -20,5 +20,5 @@ resource "docker_container" "backend_ws1" {
 }
 
 output "backend_ports" {
-    value = docker_container.backend_ws1[*].ports[0].external
+  value = docker_container.backend_ws1[*].ports[0].external
 }
