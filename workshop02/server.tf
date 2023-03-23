@@ -24,7 +24,7 @@ resource "local_file" "server_inventory" {
 
 # to generate ansible env var file
 resource "local_file" "server_inventory_env_file" {
-  filename = "vars/codeserver.yml"
+  filename = "ansible/vars/codeserver.yml"
   content = templatefile("templates/codeserver.yml.tftpl", {
     codeserver_secret_password = var.codeserver_password,
   })

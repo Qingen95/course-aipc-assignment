@@ -1,0 +1,3 @@
+- import_playbook: playbooks/ping.yaml
+- import_playbook: playbooks/code_server.yaml
+- import_playbook: playbooks/nginx.yaml
