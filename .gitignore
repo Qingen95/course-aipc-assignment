@@ -8,3 +8,8 @@
 *.tfvars.json
 
 **/vars
+
+**/.env
+
+# packer var files
+**/*.pkrvars.hcl
